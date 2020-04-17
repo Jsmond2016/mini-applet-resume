@@ -1,0 +1,146 @@
+<swiper style="height: {{height}}px">
+  <swiper-item>
+    <image src="../../images/avatar.jpg" mode="widthFix" class="avatar" />
+    <view class="cover-info">
+      <text class="cover-name">{{name}}</text>
+      <text class="cover-spell">{{spell}}</text>
+    </view>
+    <view class="big-circle"></view>
+    <view class="medium-circle"></view>
+    <view class="small-circle"></view>
+    <view class="cover-work">
+      <text class="cover-job">{{job}}</text>
+      <text class="cover-exp">{{exp}}</text>
+    </view>
+    <view class="navigation">
+      我的简历
+      <image class="arrow-right" src="../../images/arrow-right.png"></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" style="width: {{width}}px; height: {{height}}px">
+       <view class="resume">
+         <view class="section">
+           <view class="section-info">
+             <view class="section-seq">1</view>
+             <text class="section-title">基本资料</text>
+           </view>
+           <view class="column col-2">
+             <text class="info">姓名：{{name}}</text>
+             <text class="info">电话：{{tel}}</text>
+           </view>
+           <view class="column col-2">
+             <text class="info">性别：{{gender}}</text>
+             <text class="info">年龄：{{age}}</text>
+           </view>
+           <view class="column col-1">
+             <text class="info">邮箱：{{email}}</text>
+           </view>
+           <view class="column col-1">
+             <text class="info">住址：{{address}}</text>
+           </view>
+         </view>
+         <view class="sectoin">
+            <view class="section-info">
+              <view class="section-seq">2</view>
+              <text class="section-title">主要技能</text>
+            </view>
+            <view class="skill" wx:for="{{skills}}" wx:key="{{item}}">
+              <text class="skill-name">{{item.name}}</text>
+              <progress class="progress" percent="{{item.percent}}" stroke-stroke-width="5"/>
+            </view>
+         </view>
+         <view class="sectoin">
+           <view class="section-info">
+              <view class="section-seq">2</view>
+              <text class="section-title">教育经历</text>
+            </view>
+            <view class="education" wx:for="{{education}}" wx:key="{{item}}">
+              <view class="school">
+                <image class="icon-school" src="../../images/icon_school.png" />
+                <text>{{item.name}}</text>
+              </view>
+              <view class="row">
+                <view class="info">
+                  <image class="icon-book" src="../../images/icon_book.png" />
+                  <text>{{item.major}}</text>
+                </view>
+                <view class="info">
+                  <image class="icon-calendar" src="../../images/icon_calendar.png" />
+                  <text>{{item.year}}</text>
+                </view>
+              </view>
+              <rich-text class="desc">{{item.desc}}</rich-text>
+            </view>
+         </view>
+       </view>
+       <view class="page"> 2/4</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item >
+    <scroll-view scroll-y="true" style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">3</view>
+            <text class="section-title">工作经历</text>
+          </view>
+        </view>
+        <view class="work" wx:for="{{work}}" wx:key="{{item}}">
+          <view class="company">
+            <image class="icon-company" src="../../images/icon_company.png" />
+            <text>{{item.company}}</text>
+          </view>
+          <view class="row">
+            <view class="info">
+              <image class="icon-job" src="../../images/icon_computer.png" />
+              <text>{{item.job}}</text>
+            </view>
+            <view class="info">
+              <image class="icon-calendar" src="../../images/icon_calendar.png" />
+              <text>{{item.year}}</text>
+            </view>
+          </view>
+          <rich-text class="desc">{{item.desc}}</rich-text>
+        </view>
+      </view>
+      <view class="page"> 3/4</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item >
+    <scroll-view scroll-y="true" style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">4</view>
+            <text class="section-title">项目经历</text>
+          </view>
+        </view>
+        <view class="project" wx:for="{{projects}}" wx:key="{{item}}">
+          <view class="project-name">
+            <image class="icon-computer" src="../../images/icon_computer.png" />
+            <text>{{item.name}}</text>
+          </view>
+          <rich-text class="desc">{{item.desc}}</rich-text>
+        </view>
+      </view>
+      <view class="page"> 4/4</view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item >
+    <scroll-view scroll-y="true" style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">5</view>
+            <text class="section-title">自我评价</text>
+          </view>
+        </view>
+        <view class="remarks">
+          <rich-text class="desc">{{remarks}}</rich-text>
+        </view>
+      </view>
+      <view class="page"> 4/4</view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

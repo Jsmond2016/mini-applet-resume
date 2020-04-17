@@ -1,0 +1,6 @@
+<View class="container">
+  <View class="s1"></View>
+  <View class="s2"></View>
+  <View class="s3"></View>
+  <View class="s4"></View>
+</View>

@@ -1,0 +1,24 @@
+/* pages/test/index.wxss */
+.container{
+  display: flex;
+}
+.s1 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+.s2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.s3 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+.s4 {
+  width: 100px;
+  height: 100px;
+  background-color: red,
+}
