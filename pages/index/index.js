@@ -11,14 +11,17 @@ Page({
     job: '前端开发工程师',
     exp: '1年工作经验',
     tel: '1597909****',
-    gender: '男',
+    qualifications: '本科',
+    campus: '江西理工大学',
+    profession: '软件工程',
+    englishAblity: 'CET-6',
     age: 25,
     email: 'jsmond2016@gmail.com',
-    address: '上海青浦',
+    graduateTime: '2019年6月',
+    showPage: false,
     skills: [
-      {name: 'HTML/CSS/ES6', percent: 85},
       {name: 'HTML5/CSS3/Less/Scss', percent: 80},
-      {name: 'jQuery', percent: 50},
+      {name: 'JavaScript/ES5/ES6/jQuery', percent: 70},
       {name: 'Git/Git-Flow工作流', percent: 70},
       {name: 'Webpack/模块化', percent: 70},
       {name: 'React/React-Router/Redux/Dva', percent: 80},
@@ -26,64 +29,32 @@ Page({
       {name: '微信小程序/Taro', percent: 50},
       {name: 'TypeScript/Nodejs', percent: 50}
     ],
-    education: [
-      {
-        name: '江西理工大学',
-        major: '软件工程(本科)',
-        year: '2015-2019',
-        desc: '本专业培养掌握计算机软件基本理论知识，熟悉软件开发和管理技术，能够在计算机软件领域中从事软件设计，软件开发，软件管理的高级人才'
-      },
-      {
-        name: '江西理工大学',
-        major: '软件工程(本科)',
-        year: '2015-2019',
-        desc: '本专业培养掌握计算机软件基本理论知识，熟悉软件开发和管理技术，能够在计算机软件领域中从事软件设计，软件开发，软件管理的高级人才'
-      }
-    ],
     work: [
       {
-        company: '上海 xx 公司',
-        job: '实习生',
-        year: '2019/7--2020/7',
-        desc: `1.大兴区农保电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        2.海淀区劳动仲裁电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        3.海淀区社保中心办公应用系统以上线项目的代码二次开发以及维护工作。`
+        company: '上海汉得信息科技有限公司',
+        job: '前端开发工程师',
+        year: '2019/7--2020/4',
+        desc: `本人在汉得信息科技有限公司主要负责SRM项目门户页的维护，负责 Sass 系统平台功能开发，负责项目二开功能开发`
       },
-      {
-        company: '上海 xx 公司',
-        job: '实习生',
-        year: '2019/7--2020/7',
-        desc: `1.大兴区农保电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        2.海淀区劳动仲裁电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        3.海淀区社保中心办公应用系统以上线项目的代码二次开发以及维护工作。`
-      },
-      {
-        company: '上海 xx 公司',
-        job: '实习生',
-        year: '2019/7--2020/7',
-        desc: `1.大兴区农保电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        2.海淀区劳动仲裁电子档案系统项目开发，并负责项目上线后的代码二次修改与维护。
-        3.海淀区社保中心办公应用系统以上线项目的代码二次开发以及维护工作。`
-      }
     ],
     projects: [
       {
-        name: '** 后台系统',
-        desc: '** 后台系统采用 React，React-Router，Redux技术，服务端使用 Nodejs，\
-        Express 技术开发而成，数据交互使用 Axios 技术完成；使用可视化技术 Echarts，\
-        能够用于基本的用户管理，信息管理，用于查看相关图表信息等'
+        name: 'SRM 供应链管理系统开发',
+        desc: '该系统为供应商和采购商提供了便利高效的解决方案，让客户从需求征集，商品采购，订单追踪，招投标管理等通过系统实全面掌控。',
+        stack1: '使用 React/React-Router/Dvajs/AntDesign/Redux-saga技术开发',
+        stack2: '编写基础的可复用组件 Search, List, DisplayFormItem等，提高开发效率',
       },
       {
-        name: '** 后台系统',
-        desc: '** 后台系统采用 React，React-Router，Redux技术，服务端使用 Nodejs，\
-        Express 技术开发而成，数据交互使用 Axios 技术完成；使用可视化技术 Echarts，\
-        能够用于基本的用户管理，信息管理，用于查看相关图表信息等'
+        name: 'SRM 供应链管理系统开发',
+        desc: '该系统为供应商和采购商提供了便利高效的解决方案，让客户从需求征集，商品采购，订单追踪，招投标管理等通过系统实全面掌控。',
+        stack1: '使用 React/React-Router/Dvajs/AntDesign/Redux-saga技术开发',
+        stack2: '编写基础的可复用组件 Search, List, DisplayFormItem等，提高开发效率',
       },
       {
-        name: '** 后台系统',
-        desc: '** 后台系统采用 React，React-Router，Redux技术，服务端使用 Nodejs，\
-        Express 技术开发而成，数据交互使用 Axios 技术完成；使用可视化技术 Echarts，\
-        能够用于基本的用户管理，信息管理，用于查看相关图表信息等'
+        name: 'SRM 供应链管理系统开发',
+        desc: '该系统为供应商和采购商提供了便利高效的解决方案，让客户从需求征集，商品采购，订单追踪，招投标管理等通过系统实全面掌控。',
+        stack1: '使用 React/React-Router/Dvajs/AntDesign/Redux-saga技术开发',
+        stack2: '编写基础的可复用组件 Search, List, DisplayFormItem等，提高开发效率',
       },
     ],
     remarks: '本人熟练掌握word邮件合并，excel数据透视表，VBA，全动态ppt制作等中高阶office操作技巧\
@@ -92,13 +63,65 @@ Page({
               有着丰富的新媒体运营经验，先后运营过xxx个微信公众号，运营期间公众号DUAxxx，关注量增长率xxx。\
               热爱xxx，曾在xxx获得了xxx奖项。'
   },
-  onShow: function() {
-    var width = wx.getSystemInfoSync().windowWidth;
-    var height = wx.getSystemInfoSync().windowHeight;
-    // 这里不是 this.setState，而是 setData
+  onShow: function () {
+    this.setClient();
+  },
+
+  onShareAppMessage: function(e){
+    if(e.from == 'menu'){
+        // 此处是用户点击了小程序右上角的转发按钮触发的
+        return {
+          title: '黄锦的简历',
+          path: 'pages/index/index',
+          success: function (res) {
+            console.log('分享成功')
+          }
+        }
+    }else if(e.from == 'button'){
+        // 此处是用户点击了页面的转发按钮
+        console.log('button------');
+    }
+  },
+
+  setClient(e) {
+    const width = wx.getSystemInfoSync().windowWidth;
+    const height = wx.getSystemInfoSync().windowHeight;
     this.setData({
       width: width,
       height: height,
     })
+  },
+
+  // 防抖函数
+  throttle(func, wait) {
+    let timeout;
+    return function() {
+        let context = this;
+        let args = arguments;
+        if (!timeout) {
+            timeout = setTimeout(() => {
+                timeout = null;
+                func.apply(context, args)
+            }, wait)
+        }
+      }
+  },
+
+  changePage(e) {
+    const height = wx.getSystemInfoSync().windowHeight;
+    // 当从底部上滑超过 20 px 时触发
+    if (+e.detail.scrollTop < +(e.detail.scrollHeight - height - 20)) {
+      if (this.data.showPage) {
+        this.setData({
+          showPage: false,
+        });
+      }
+    } else {
+      if (!this.data.showPage) {
+        this.setData({
+          showPage: true,
+        });
+      }
+    }
   }
 })
